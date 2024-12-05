@@ -1,6 +1,9 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push,workflow_dispatch]
+env:
+  # Setting an environment variable with the value of a configuration variable
+  env_runid: ${{ github.run_id }}
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
