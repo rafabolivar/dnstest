@@ -10,6 +10,7 @@ jobs:
       - run: echo "The requested IP Address is ${{ vars.IPADDRESS }}."
       - run: echo "The requested Visibility is ${{ vars.VIEW }}."
       - run: echo "🔎 The RITM Number is ${{ vars.RITM }}."
+      - run: echo "💡 The GitHub Job is ${{ github.job }}."
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
